@@ -8,4 +8,8 @@ export class AppConfigService {
   get port(): number {
     return this.configService.getOrThrow<number>('APP_PORT');
   }
+
+  get allowedOrigin(): string {
+    return this.configService.getOrThrow<string>('ALLOWED_ORIGIN');
+  }
 }
