@@ -12,7 +12,7 @@
     "baseUrl": "./",
     "paths": {
       "@app/*": ["./src/app/*"],
-      "@config/*": ["./src/config/*"],
+      "@configs/*": ["src/configs/*"],
       "@modules/*": ["./src/modules/*"],
       "@common/*": ["./src/common/*"]
     },

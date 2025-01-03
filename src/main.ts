@@ -1,10 +1,11 @@
 import { NestFactory } from '@nestjs/core';
 import * as cookieParser from 'cookie-parser';
+
 import { AppConfigService } from './app/app-config.service';
 import { AppModule } from './app/app.module';
-import { getCorsConfig } from './config/cors.config';
+import { getCorsConfig } from './configs/cors.config';
 
-async function bootstrap() {
+async function bootstrap(): Promise<void> {
   const app = await NestFactory.create(AppModule);
   const appConfig = app.get(AppConfigService);
 
