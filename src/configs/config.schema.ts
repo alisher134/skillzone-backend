@@ -12,4 +12,13 @@ export class ConfigSchema {
 
   @IsString()
   SWAGGER_PREFIX: string;
+
+  @IsString()
+  POSTGRES_USER: string;
+
+  @IsString()
+  POSTGRES_PASSWORD: string;
+
+  @IsString()
+  POSTGRES_DB: string;
 }
