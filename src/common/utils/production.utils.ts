@@ -1,4 +1,5 @@
 import { AppConfigService } from '@app/app-config.service';
 
-export const isProduction = (appConfig: AppConfigService): boolean =>
-  appConfig.nodeEnv === 'production';
+export function isProduction(appConfig: AppConfigService): boolean {
+  return appConfig.nodeEnv === 'production';
+}
