@@ -4,6 +4,7 @@ import { ConfigModule } from '@nestjs/config';
 import { configValidate } from '@configs/config.validation';
 
 import { PrismaModule } from '@modules/prisma/prisma.module';
+import { UserModule } from '@modules/user/user.module';
 
 import { AppConfigService } from './app-config.service';
 
@@ -15,6 +16,7 @@ import { AppConfigService } from './app-config.service';
       validate: configValidate,
     }),
     PrismaModule,
+    UserModule,
   ],
   providers: [AppConfigService],
 })
